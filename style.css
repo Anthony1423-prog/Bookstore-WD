@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+/* HEADER */
+
+header {
+    background-color: #d97832;
+    height: 120px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 8px;
+    font-size: 13px;
+}
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    display: flex;
+    min-height: 450px;
+}
+
+/* SIDEBAR */
+
+aside {
+    width: 25%;
+    background-color: #d97832;
+    padding: 30px;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+aside a {
+    display: block;
+    background-color: #f0d8ad;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+/* CONTENT */
+
+main {
+    width: 75%;
+    padding: 60px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+/* FORMS */
+
+.box {
+    width: 280px;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    width: 100%;
+    padding: 9px;
+    margin: 7px 0;
+}
+
+.box textarea {
+    width: 100%;
+    height: 60px;
+}
+
+.box select {
+    padding: 5px;
+    margin: 2px;
+}
+
+button {
+    background-color: #d97832;
+    border: none;
+    padding: 9px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #d97832;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* CART */
+
+.total {
+    text-align: right;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #d97832;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
