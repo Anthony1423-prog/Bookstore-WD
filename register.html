@@ -1,137 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | G.L. Bajaj Online Book Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-
-    <img src="logo.png" class="logo">
-
-    <h1>G.L. Bajaj Online Book Store</h1>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="login.html">Login</a> |
-        <a href="register.html">Register</a> |
-        <a href="catalog.html">Catalogue</a> |
-        <a href="cart.html">Cart</a>
-    </nav>
-
-</header>
-
-<div class="container">
-
-    <aside>
-
-        <h3>Categories</h3>
-
-        <a href="catalog.html">CSE Books</a>
-        <a href="catalog.html">ECE Books</a>
-        <a href="catalog.html">Mechanical Books</a>
-
-    </aside>
-
-    <main>
-
-        <div class="box register">
-
-            <h2>Registration Page</h2>
-
-            <input type="text" placeholder="Full Name">
-
-            <input type="email" placeholder="Email">
-
-            <input type="text" placeholder="Mobile No.">
-
-            <input type="password" placeholder="Password">
-
-            <input type="password" placeholder="Confirm Password">
-
-            <p>Gender</p>
-
-            <input type="radio" name="Gender"> Male
-            <input type="radio" name="Gender"> Female
-            <input type="radio" name="Gender"> Other
-
-            <p>Date of Birth</p>
-
-            <select>
-                <option>Day</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-                <option>25</option>
-                <option>26</option>
-                <option>27</option>
-                <option>28</option>
-                <option>29</option>
-                <option>30</option>
-                <option>31</option>
-            </select>
-
-            <select>
-                <option>Month</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-            </select>
-
-            <select>
-                <option>Year</option>
-                <option>2000</option>
-                <option>2001</option>
-                <option>2002</option>
-                <option>2003</option>
-            </select>
-
-            <textarea placeholder="Enter your address"></textarea>
-
-            <button>Register</button>
-
-        </div>
-
-    </main>
-
-</div>
-
-<footer>
-    © Created by Purushottam Priyadarshi<br>
-    Roll No. 2501920110287
-</footer>
-
-</body>
-</html>
+<header><img src="logo.png" class="logo" alt="G.L. Bajaj logo"><h1>G.L. Bajaj Online Book Store</h1><nav><a href="index.html">Home</a><a href="login.html">Login</a><a href="register.html">Register</a><a href="catalog.html">Catalogue</a><a href="cart.html">Cart <span class="cart-count">0</span></a></nav></header>
+<div class="container"><aside><h3>Categories</h3><a href="catalog.html#cse">CSE Books</a><a href="catalog.html#ece">ECE Books</a><a href="catalog.html#mechanical">Mechanical Books</a></aside>
+<main><form class="box auth-form register-form" id="register-form"><h2>Create an Account</h2><p>Register for this bookstore demo.</p>
+<label for="register-name">Full name</label><input id="register-name" name="name" type="text" autocomplete="name" placeholder="Full Name" required>
+<label for="register-email">Email</label><input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+<label for="register-mobile">Mobile number</label><input id="register-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="numeric" pattern="[0-9+() -]{10,15}" placeholder="Mobile No." required>
+<label for="register-password">Password</label><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required>
+<label for="register-confirm">Confirm password</label><input id="register-confirm" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Re-enter password" required>
+<button type="submit">Register</button><p id="register-message" class="form-message" role="status" aria-live="polite"></p><p class="form-note">Already registered? <a href="login.html">Login</a></p>
+</form><p class="demo-note">This lab demo keeps account data in this browser only. It is not real server-side authentication.</p></main></div>
+<footer>© Created by Purushottam Priyadarshi<br>Roll No. 2501920110287</footer><script src="store.js"></script><script src="auth.js"></script></body></html>
