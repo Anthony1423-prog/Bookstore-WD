@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Registration · PageTurner</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration · G.L. Bajaj Book Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <img class="logo" src="logo.png" alt="G.L. Bajaj logo">
     <h1>G.L. Bajaj Online Book Store</h1>
+
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="login.html">Login</a>
-      <a href="registration.html">Registration</a>
-      <a href="catalogue.html">Catalogue</a>
+      <a href="register.html">Registration</a>
+      <a href="catalog.html">Catalogue</a>
       <a href="cart.html">Cart <span class="cart-count" id="count">0</span></a>
     </nav>
   </header>
@@ -22,26 +23,30 @@
   <div class="layout">
     <aside class="left">
       <h3>Categories</h3>
-      <a href="catalogue.html?dept=CSE">CSE</a>
-      <a href="catalogue.html?dept=ECE">ECE</a>
-      <a href="catalogue.html?dept=EEE">EEE</a>
+      <a href="catalog.html?dept=CSE">CSE</a>
+      <a href="catalog.html?dept=ECE">ECE</a>
+      <a href="catalog.html?dept=EEE">EEE</a>
     </aside>
 
     <main class="main">
       <h2>Registration Page</h2>
+
       <form id="register" class="card grid" novalidate>
         <label class="field">
           Name
           <input name="name">
         </label>
+
         <label class="field">
           Password
           <input name="password" type="password">
         </label>
+
         <label class="field">
           E-mail ID
           <input name="email" type="email">
         </label>
+
         <label class="field">
           Phone Number
           <input name="phone" inputmode="numeric" maxlength="10">
@@ -58,26 +63,28 @@
           Date of birth (day / month / year)
           <span>
             <select name="day">
-              <option>Day</option>
+              <option value="">Day</option>
               <script>
                 for (let i = 1; i <= 31; i++) {
-                  document.write(`<option>${i}</option>`);
+                  document.write(`<option value="${i}">${i}</option>`);
                 }
               </script>
             </select>
+
             <select name="month">
-              <option>Month</option>
+              <option value="">Month</option>
               <script>
                 for (let i = 1; i <= 12; i++) {
-                  document.write(`<option>${i}</option>`);
+                  document.write(`<option value="${i}">${i}</option>`);
                 }
               </script>
             </select>
+
             <select name="year">
-              <option>Year</option>
+              <option value="">Year</option>
               <script>
                 for (let i = 2008; i >= 1970; i--) {
-                  document.write(`<option>${i}</option>`);
+                  document.write(`<option value="${i}">${i}</option>`);
                 }
               </script>
             </select>
@@ -86,19 +93,19 @@
 
         <fieldset class="wide">
           <legend>Languages known</legend>
-          <label><input type="checkbox" name="language"> English</label>
-          <label><input type="checkbox" name="language"> Telugu</label>
-          <label><input type="checkbox" name="language"> Hindi</label>
-          <label><input type="checkbox" name="language"> Tamil</label>
+          <label><input type="checkbox" name="language" value="English"> English</label>
+          <label><input type="checkbox" name="language" value="Telugu"> Telugu</label>
+          <label><input type="checkbox" name="language" value="Hindi"> Hindi</label>
+          <label><input type="checkbox" name="language" value="Tamil"> Tamil</label>
         </fieldset>
 
         <label class="field wide">
           Address
-          <textarea rows="3"></textarea>
+          <textarea name="address" rows="3"></textarea>
         </label>
 
         <div class="wide">
-          <button>Register</button>
+          <button type="submit">Register</button>
           <button type="reset">Reset</button>
           <p id="result" role="status"></p>
         </div>
@@ -106,10 +113,12 @@
     </main>
   </div>
 
-  <script src="app.js"></script>
   <footer class="footer">
     © Created by Purushottam Priyadarshi<br>
     Roll No. 2501920110287
   </footer>
+
+  <script src="book-covers.js"></script>
+  <script src="store.js"></script>
 </body>
 </html>
