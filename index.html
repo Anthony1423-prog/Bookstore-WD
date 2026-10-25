@@ -1,5 +1,87 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>G.L. Bajaj Online Book Store</title><link rel="stylesheet" href="style.css"></head><body><header class="header"><img class="logo" src="logo.png" alt="G.L. Bajaj logo"><h1>G.L. Bajaj Online Book Store</h1><nav class="nav"><a href="index.html">Home</a><a href="login.html">Login</a><a href="register.html">Registration</a><a href="catalog.html">Catalogue</a><a href="cart.html">Cart <span class="cart-count" id="count">0</span></a></nav></header><div class="layout"><aside class="left"><h3>Categories</h3><a href="catalog.html?dept=CSE">CSE</a><a href="catalog.html?dept=ECE">ECE</a><a href="catalog.html?dept=EEE">EEE</a></aside><main class="main"><section class="hero"><small>GL BAJAJ • CAMPUS BOOKSTORE</small><h2>Find your next great read.</h2><p>Textbooks and essentials for every engineering journey.</p><a class="btn" href="catalog.html">Browse catalogue</a></section><h2>Popular picks</h2><section class="books"><article class="book"><img class="cover" data-cover="xml" alt="XML Bible book cover"><h3>XMLBible</h3><p>Author: Winston<br>Publication: Wiely</p><strong>$40.5</strong><button onclick="add('xml')">Add to cart</button></article><article class="book"><img class="cover" data-cover="ai" alt="AI book cover"><h3>AI</h3><p>Author: S.Russel<br>Publication: Princetonhall</p><strong>$63</strong><button onclick="add('ai')">Add to cart</button></article><article class="book"><img class="cover" data-cover="java" alt="Java 2 book cover"><h3>Java 2</h3><p>Author: Watson<br>Publication: BPBpublications</p><strong>$35.5</strong><button onclick="add('java')">Add to cart</button></article><article class="book"><div class="cover cover-placeholder" role="img" aria-label="HTML in 24 hours cover">HTML in 24 hours</div><h3>HTML in 24 hours</h3><p>Author: Sam Peter<br>Publication: Sampublication</p><strong>$50</strong><button onclick="add('html')">Add to cart</button></article></section><h2>Welcome</h2><p>Choose a department to browse books, add selections to your cart, and review them before checkout.</p><p class="notice">Static front-end workshop project. Login and checkout are demonstrations; no account or payment data is sent.</p></main></div><script src="book-covers.js"></script><script src="store.js"></script><footer class="footer">© Created by Purushottam Priyadarshi<br>Roll No. 2501920110287</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>G.L. Bajaj Online Book Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="logo.png" alt="G.L. Bajaj logo">
+    <h1>G.L. Bajaj Online Book Store</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart <span class="cart-count" id="count">0</span></a>
+    </nav>
+  </header>
 
+  <div class="layout">
+    <aside class="left">
+      <h3>Categories</h3>
+      <a href="catalogue.html?dept=CSE">CSE</a>
+      <a href="catalogue.html?dept=ECE">ECE</a>
+      <a href="catalogue.html?dept=EEE">EEE</a>
+    </aside>
 
+    <main class="main">
+      <section class="hero">
+        <small>GL BAJAJ • CAMPUS BOOKSTORE</small>
+        <h2>Find your next great read.</h2>
+        <p>Textbooks and essentials for every engineering journey.</p>
+        <a class="btn" href="catalogue.html">Browse catalogue</a>
+      </section>
 
+      <h2>Popular picks</h2>
+      <section class="books">
+        <article class="book">
+          <img class="cover" src="books/xml-bible.jpg" alt="XML Bible book cover">
+          <h3>XMLBible</h3>
+          <p>Author: Winston<br>Publication: Wiely</p>
+          <strong>$40.5</strong>
+          <button onclick="add('xml')">Add to cart</button>
+        </article>
 
+        <article class="book">
+          <img class="cover" src="books/ai.jpg" alt="AI book cover">
+          <h3>AI</h3>
+          <p>Author: S.Russel<br>Publication: Princetonhall</p>
+          <strong>$63</strong>
+          <button onclick="add('ai')">Add to cart</button>
+        </article>
+
+        <article class="book">
+          <img class="cover" src="books/java2.jpg" alt="Java 2 book cover">
+          <h3>Java 2</h3>
+          <p>Author: Watson<br>Publication: BPBpublications</p>
+          <strong>$35.5</strong>
+          <button onclick="add('java')">Add to cart</button>
+        </article>
+
+        <article class="book">
+          <div class="cover cover-placeholder" role="img" aria-label="HTML in 24 hours cover">
+            HTML in 24 hours
+          </div>
+          <h3>HTML in 24 hours</h3>
+          <p>Author: Sam Peter<br>Publication: Sampublication</p>
+          <strong>$50</strong>
+          <button onclick="add('html')">Add to cart</button>
+        </article>
+      </section>
+
+      <h2>Welcome</h2>
+      <p>Choose a department to browse books, add selections to your cart, and review them before checkout.</p>
+      <p class="notice">Static front-end workshop project. Login and checkout are demonstrations; no account or payment data is sent.</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <footer class="footer">
+    © Created by Purushottam Priyadarshi<br>
+    Roll No. 2501920110287
+  </footer>
+</body>
+</html>
