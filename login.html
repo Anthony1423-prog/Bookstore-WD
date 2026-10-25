@@ -1,3 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login · PageTurner</title><link rel="stylesheet" href="style.css"></head><body><header class="header"><img class="logo" src="logo.png" alt="G.L. Bajaj logo"><h1>G.L. Bajaj Online Book Store</h1><nav class="nav"><a href="index.html">Home</a><a href="login.html">Login</a><a href="register.html">Registration</a><a href="catalog.html">Catalogue</a><a href="cart.html">Cart <span class="cart-count" id="count">0</span></a></nav></header><div class="layout"><aside class="left"><h3>Categories</h3><a href="catalog.html?dept=CSE">CSE</a><a href="catalog.html?dept=ECE">ECE</a><a href="catalog.html?dept=EEE">EEE</a></aside><main class="main"><h2>Login Page</h2><form id="login" class="card"><label class="field">User Name:<input name="username" required></label><label class="field">Password:<input type="password" name="password" required></label><button>Submit</button> <button type="reset">Reset</button><p id="result" role="status"></p></form></main></div><script src="book-covers.js"></script><script src="store.js"></script><footer class="footer">© Created by Purushottam Priyadarshi<br>Roll No. 2501920110287</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login · PageTurner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="logo.png" alt="G.L. Bajaj logo">
+    <h1>G.L. Bajaj Online Book Store</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart <span class="cart-count" id="count">0</span></a>
+    </nav>
+  </header>
 
+  <div class="layout">
+    <aside class="left">
+      <h3>Categories</h3>
+      <a href="catalogue.html?dept=CSE">CSE</a>
+      <a href="catalogue.html?dept=ECE">ECE</a>
+      <a href="catalogue.html?dept=EEE">EEE</a>
+    </aside>
 
+    <main class="main">
+      <h2>Login Page</h2>
+      <form id="login" class="card">
+        <label class="field">
+          User Name:
+          <input name="username" required>
+        </label>
+        <label class="field">
+          Password:
+          <input type="password" name="password" required>
+        </label>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+        <p id="result" role="status"></p>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <footer class="footer">
+    © Created by Purushottam Priyadarshi<br>
+    Roll No. 2501920110287
+  </footer>
+</body>
+</html>
